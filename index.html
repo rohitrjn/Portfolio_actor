@@ -79,25 +79,18 @@
     <section id="gallery" class="gallery">
         <div class="container">
             <h2>Photo Gallery</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item placeholder-image">
-                    <span>Photo 1</span>
-                </div>
-                <div class="gallery-item placeholder-image">
-                    <span>Photo 2</span>
-                </div>
-                <div class="gallery-item placeholder-image">
-                    <span>Photo 3</span>
-                </div>
-                <div class="gallery-item placeholder-image">
-                    <span>Photo 4</span>
-                </div>
-                <div class="gallery-item placeholder-image">
-                    <span>Photo 5</span>
-                </div>
-                <div class="gallery-item placeholder-image">
-                    <span>Photo 6</span>
-                </div>
+            
+            <!-- Upload Photo Form -->
+            <div class="upload-section">
+                <form id="uploadPhotoForm" enctype="multipart/form-data">
+                    <label for="photoInput">Upload New Photo:</label>
+                    <input type="file" id="photoInput" name="photo" accept="image/*" required>
+                    <button type="submit">Upload Photo</button>
+                </form>
+            </div>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Photos will be loaded dynamically here -->
             </div>
         </div>
     </section>
@@ -106,16 +99,18 @@
     <section id="videos" class="videos">
         <div class="container">
             <h2>Video Reel</h2>
-            <div class="video-grid">
-                <div class="video-item placeholder-image">
-                    <span>▶ Video 1</span>
-                </div>
-                <div class="video-item placeholder-image">
-                    <span>▶ Video 2</span>
-                </div>
-                <div class="video-item placeholder-image">
-                    <span>▶ Video 3</span>
-                </div>
+            
+            <!-- Add Video Form -->
+            <div class="upload-section">
+                <form id="uploadVideoForm">
+                    <label for="videoInput">Add YouTube Video Link:</label>
+                    <input type="url" id="videoInput" name="url" placeholder="https://youtu.be/..." required>
+                    <button type="submit">Add Video</button>
+                </form>
+            </div>
+            
+            <div class="video-grid" id="videoGrid">
+                <!-- Videos will be loaded dynamically here -->
             </div>
         </div>
     </section>
