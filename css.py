@@ -110,5 +110,5 @@ def serve_static(filename):
     return send_from_directory(os.path.dirname(__file__), filename)
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+    app.run(debug=True, port=5000)
 
