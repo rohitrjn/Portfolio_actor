@@ -322,61 +322,6 @@ h2 {
 }
 
 /* ============================================
-   UPLOAD SECTIONS
-   ============================================ */
-.upload-section {
-    background: rgba(90, 138, 201, 0.05);
-    padding: var(--spacing-lg);
-    border-radius: 12px;
-    margin-bottom: var(--spacing-xl);
-    border: 2px dashed var(--accent-blue);
-}
-
-.upload-section form {
-    display: flex;
-    gap: var(--spacing-md);
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.upload-section label {
-    font-weight: 600;
-    color: var(--text-dark);
-}
-
-.upload-section input[type="file"],
-.upload-section input[type="url"] {
-    padding: var(--spacing-sm);
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    font-size: 0.95rem;
-    flex: 1;
-    min-width: 200px;
-}
-
-.upload-section button {
-    padding: var(--spacing-sm) var(--spacing-lg);
-    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--primary-dark) 100%);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
-    white-space: nowrap;
-}
-
-.upload-section button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(90, 138, 201, 0.3);
-}
-
-.upload-section button:active {
-    transform: translateY(0);
-}
-
-/* ============================================
    CONTACT SECTION
    ============================================ */
 .contact {
