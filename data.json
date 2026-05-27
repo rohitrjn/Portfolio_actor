@@ -1,13 +1,68 @@
 {
+  "hero": {
+    "name": "Rohit Ranjan",
+    "title": "Actor | Performance Artist",
+    "photo": "./assets/images/1.jpg"
+  },
+  "about": {
+    "heading": "The Visionary\nBehind the Stage",
+    "bio": "With three years of experience navigating the complexities of stage and screen, I have cultivated a performance style that bridges classical discipline and contemporary realism. My journey began in the rigorous training of traditional theater, where I learned to inhabit every character with technical precision and emotional depth.\n\nToday, I continue to push the boundaries of the human experience — bringing a unique perspective to every role. I believe that great acting is not just about performance, but about truth.",
+    "photo": "./assets/images/2.jpg"
+  },
   "photos": [
-    "./uploads/Rohit Ranjan-1.png",
-    "./uploads/Rohit Ranjan-2.png",
-    "./uploads/Rohit Ranjan-3.png",
-    "./uploads/Rohit_Ranjan_photo.jpg"
+    { "src": "./assets/images/1.jpg",  "alt": "Portrait",       "caption": "Portrait" },
+    { "src": "./assets/images/2.jpg",  "alt": "Headshot",       "caption": "Headshot" },
+    { "src": "./assets/images/3.jpg",  "alt": "Side Profile",   "caption": "Side Profile" },
+    { "src": "./assets/images/4.JPG",  "alt": "Full Length",    "caption": "Full Length" },
+    { "src": "./assets/images/5.JPG",  "alt": "Shoulder Length","caption": "Shoulder Length" },
+    { "src": "./assets/images/6.jpg",  "alt": "Candid",         "caption": "Candid" },
+    { "src": "./assets/images/7.JPG",  "alt": "Character Study","caption": "Character Study" },
+    { "src": "./assets/images/8.png",  "alt": "Studio Shot",    "caption": "Studio Shot" },
+    { "src": "./assets/images/9.png",  "alt": "Dramatic",       "caption": "Dramatic" },
+    { "src": "./assets/images/10.png", "alt": "Editorial",      "caption": "Editorial" },
+    { "src": "./assets/images/11.jpg", "alt": "Lifestyle",      "caption": "Lifestyle" }
   ],
-  "videos": [
-    "https://www.youtube.com/embed/8is5TIxcvlA",
-    "https://www.youtube.com/embed/zpLhYOwujqc",
-    "https://www.youtube.com/embed/buqWNNDfcEw"
-  ]
+  "introVideo": {
+    "src": "./assets/videos/INTRODUCTION.mp4",
+    "title": "Introduction",
+    "thumbnail": "./assets/images/1.jpg"
+  },
+  "showreel": {
+    "src": "./assets/videos/INTRODUCTION.mp4",
+    "title": "Show Reel",
+    "thumbnail": "./assets/images/2.jpg"
+  },
+  "performances": [
+    {
+      "src": "./assets/videos/INTRODUCTION.mp4",
+      "thumbnail": "./assets/images/3.jpg",
+      "title": "The Shadow of the City",
+      "role": "Lead Role",
+      "year": "2024",
+      "medium": "Studio Recording"
+    },
+    {
+      "src": "./assets/videos/INTRODUCTION.mp4",
+      "thumbnail": "./assets/images/4.JPG",
+      "title": "The Echoes of Time",
+      "role": "Featured Role",
+      "year": "2023",
+      "medium": "Stage Recording"
+    },
+    {
+      "src": "./assets/videos/INTRODUCTION.mp4",
+      "thumbnail": "./assets/images/5.JPG",
+      "title": "The Unseen",
+      "role": "Guest Appearance",
+      "year": "2022",
+      "medium": "Digital Release"
+    }
+  ],
+  "youtube": [],
+  "contact": {
+    "phone": "+91-XXXXXXXXXX",
+    "whatsapp": "+91-XXXXXXXXXX",
+    "instagram": "@rohitranjan",
+    "email": "rohitranjan8252@gmail.com"
+  }
 }

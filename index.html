@@ -1,134 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohit Ranjan - Actor Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohit Ranjan — Actor</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Navigation Header -->
-    <header class="navbar">
-        <div class="navbar-container">
-            <div class="logo">Rohit Ranjan</div>
-            <nav class="nav-menu">
-                <a href="#homeff" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#gallery" class="nav-link">Gallery</a>
-                <a href="#videos" class="nav-link">Videos</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="#hero" class="navbar-logo">Rohit Ranjan</a>
+
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero"         class="nav-link">Home</a>
+        <a href="#about"        class="nav-link">About</a>
+        <a href="#gallery"      class="nav-link">Gallery</a>
+        <a href="#intro-video"  class="nav-link">Introduction</a>
+        <a href="#showreel"     class="nav-link">Show Reel</a>
+        <a href="#performances" class="nav-link">Performances</a>
+        <a href="#youtube"      class="nav-link">YouTube</a>
+        <a href="#contact"      class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar-contact" id="navbarContact"></div>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       HERO — Full bleed photo
+  ============================================================ -->
+  <section id="hero" class="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay-gradient"></div>
+    <div class="hero-caption">
+      <p class="hero-eyebrow" data-aos="fade-up" data-aos-delay="200">Actor &amp; Performance Artist</p>
+      <h1 class="hero-name"   data-aos="fade-up" data-aos-delay="350" id="heroName"></h1>
+      <a href="#about" class="hero-scroll-hint" data-aos="fade-up" data-aos-delay="550">
+        <span>Scroll to explore</span>
+        <svg viewBox="0 0 24 24"><path d="M12 4v16m0 0l-6-6m6 6l6-6"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT — 2-column: photo left, text right
+  ============================================================ -->
+  <section id="about" class="section about-section">
+    <div class="about-inner">
+      <div class="about-photo-wrap" data-aos="fade-right" data-aos-duration="900">
+        <div class="about-photo">
+          <img src="" alt="Rohit Ranjan" id="aboutImg" />
         </div>
-    </header>
+      </div>
+      <div class="about-text" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+        <h2 class="about-heading" id="aboutHeading"></h2>
+        <div class="about-bio" id="aboutBio"></div>
+        <a href="#contact" class="btn-primary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-image-wrapper">
-                <div class="hero-image placeholder-image">
-                    <span>Professional Photo</span>
-                </div>
-            </div>
-            <div class="hero-text">
-                <h1>Rohit Ranjan</h1>
-                <p class="tagline">Actor | Performance Artist</p>
-                <p class="hero-description">
-                    Bringing characters to life with passion and dedication. 
-                    Experienced in theater, film, and digital media.
-                </p>
-                <button class="cta-button">Let's Connect</button>
-            </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p class="about-text">
-                I'm a dedicated actor with a passion for storytelling and character development. 
-                With experience in various genres and mediums, I bring authenticity and depth to every role.
-            </p>
-            
-            <div class="about-highlights">
-                <div class="highlight-card">
-                    <div class="highlight-icon">🎭</div>
-                    <h3>Theater</h3>
-                    <p>Stage performances and live acting experience</p>
-                </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">🎬</div>
-                    <h3>Film</h3>
-                    <p>Screen acting and cinematic storytelling</p>
-                </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">📹</div>
-                    <h3>Digital</h3>
-                    <p>Web series, shorts, and digital content</p>
-                </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">✨</div>
-                    <h3>Versatile</h3>
-                    <p>Multiple genres and character types</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- ============================================================
+       GALLERY — 2-column grid with captions
+  ============================================================ -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Photo Gallery</h2>
+      <p class="section-sub"   data-aos="fade-up" data-aos-delay="100">A visual portrait — on stage and off.</p>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+  </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <h2>Photo Gallery</h2>
-            <div class="gallery-grid" id="galleryGrid">
-                <!-- Photos will be loaded dynamically here -->
-            </div>
-        </div>
-    </section>
 
-    <!-- Video Reel Section -->
-    <section id="videos" class="videos">
-        <div class="container">
-            <h2>Video Reel</h2>
-            <div class="video-grid" id="videoGrid">
-                <!-- Videos will be loaded dynamically here -->
-            </div>
-        </div>
-    </section>
+  <!-- ============================================================
+       INTRODUCTION VIDEO
+  ============================================================ -->
+  <section id="intro-video" class="section video-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Introduction</h2>
+      <p class="section-sub"   data-aos="fade-up" data-aos-delay="100">A personal introduction — who I am and what I do.</p>
+      <div class="video-player-wrap" id="introVideoWrap" data-aos="fade-up" data-aos-delay="200"></div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <p class="contact-description">
-                Interested in working together? Let's connect!
-            </p>
-            
-            <div class="contact-methods">
-                <div class="contact-card">
-                    <h3>Email</h3>
-                    <p><a href="mailto:rohit@example.com">rohit@example.com</a></p>
-                </div>
-                <div class="contact-card">
-                    <h3>Phone</h3>
-                    <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
-                </div>
-                <div class="contact-card">
-                    <h3>Social Media</h3>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">LinkedIn</a>
-                        <a href="#" class="social-link">IMDb</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 Rohit Ranjan. All rights reserved.</p>
-    </footer>
+  <!-- ============================================================
+       SHOW REEL
+  ============================================================ -->
+  <section id="showreel" class="section video-section video-section--alt">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Show Reel</h2>
+      <p class="section-sub"   data-aos="fade-up" data-aos-delay="100">A curated reel of my best performances.</p>
+      <div class="video-player-wrap" id="showreelWrap" data-aos="fade-up" data-aos-delay="200"></div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+
+  <!-- ============================================================
+       SELECTED PERFORMANCES
+  ============================================================ -->
+  <section id="performances" class="section performances-section">
+    <div class="container">
+      <h2 class="section-title performances-title" data-aos="fade-up">Selected Performances</h2>
+      <p class="section-sub" data-aos="fade-up" data-aos-delay="100">Scenes, characters, and stories I've lived.</p>
+      <div class="performances-grid" id="performancesGrid" data-aos="fade-up" data-aos-delay="200"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       YOUTUBE
+  ============================================================ -->
+  <section id="youtube" class="section youtube-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">YouTube Performances</h2>
+      <p class="section-sub"   data-aos="fade-up" data-aos-delay="100">Watch my full catalogue on YouTube.</p>
+      <div class="youtube-grid" id="youtubeGrid" data-aos="fade-up" data-aos-delay="200"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
+      <p class="section-sub"   data-aos="fade-up" data-aos-delay="100">Interested in working together? Reach out anytime.</p>
+      <div class="contact-cards" id="contactCards" data-aos="fade-up" data-aos-delay="200"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <p>&copy; <span id="footerYear"></span> Rohit Ranjan. All rights reserved.</p>
+  </footer>
+
+
+  <!-- ============================================================
+       LIGHTBOX
+  ============================================================ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <div class="lightbox-content" id="lightboxContent"></div>
+    <div class="lightbox-nav">
+      <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">&#8592;</button>
+      <button class="lightbox-next" id="lightboxNext" aria-label="Next">&#8594;</button>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       DOWNLOAD MODAL
+  ============================================================ -->
+  <div class="modal-overlay" id="downloadOverlay">
+    <div class="modal" id="downloadModal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="downloadModalClose" aria-label="Close">&times;</button>
+      <h3 class="modal-title">Download Photo</h3>
+      <p class="modal-sub">Choose quality:</p>
+      <div class="download-options">
+        <button class="download-btn" data-quality="small">
+          <span class="dq-label">Small</span>
+          <span class="dq-desc">High compression · fast share</span>
+        </button>
+        <button class="download-btn" data-quality="medium">
+          <span class="dq-label">Medium</span>
+          <span class="dq-desc">Balanced quality &amp; size</span>
+        </button>
+        <button class="download-btn" data-quality="large">
+          <span class="dq-label">Large</span>
+          <span class="dq-desc">Original quality</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

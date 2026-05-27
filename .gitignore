@@ -1,0 +1,13 @@
+# macOS system files
+.DS_Store
+**/.DS_Store
+
+# Video files — too large for GitHub (>100 MB)
+# Keep these locally; do NOT commit them
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+Intro video/
+assets/videos/
